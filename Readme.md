@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Roman Demin](https://up.htmlacademy.ru/htmlcss/26/user/219593).
-* Наставник: `Александр Горбачев`.
+* Наставник: [Александр Горбачев](https://htmlacademy.ru/profile/hrbchv).
 
 ---
 
