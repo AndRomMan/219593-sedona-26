@@ -1,0 +1,26 @@
+body {
+  background: #81b3d2;
+
+  /* Временный цвет текста */
+  color: #000000;
+}
+
+.container {
+  /* background: #ffffff url("../img/index-main_bg.jpg") center no-repeat; */
+}
+
+.main-header-banner {
+  background: #45a1da url("../img/sedona-banner_bg.jpg") center no-repeat;
+}
+
+.main-header-banner-mask {
+  background: url("../img/intro-mask.svg") center bottom no-repeat;
+}
+
+.footer {
+  background: #ffffff url("../img/index-footer_bg.png") center no-repeat;
+}
+
+.map {
+  background: url("../img/map.jpg") center no-repeat;
+}
