@@ -13,9 +13,9 @@ body {
   background: #45a1da url("../img/sedona-banner_bg.jpg") center no-repeat;
 }
 
-.main-header-banner-mask {
+/* .main-header-banner-mask {
   background: url("../img/intro-mask.svg") center bottom no-repeat;
-}
+} */
 
 .footer {
   background: #ffffff url("../img/index-footer_bg.png") center no-repeat;
@@ -23,4 +23,17 @@ body {
 
 .map {
   background: url("../img/map.jpg") center no-repeat;
+}
+
+.--visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }

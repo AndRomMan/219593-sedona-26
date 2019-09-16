@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
+  <title>Путешествие в Седону</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -71,7 +71,7 @@
       <p>Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне
       </p>
-      <button type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+      <button type="button">Поиск гостиницы в седоне</button>
     </section>
 
     <section class="map">
@@ -95,8 +95,28 @@
   </footer>
 
   <section class="modal">
-    <h4>Форма поиска гостиницы</h4>
-    <!-- Форма поиска гостиницы -->
+    <h4 class="visually-hidden">Форма поиска гостиницы</h4>
+    <form action="#" method="get">
+      <legend class="visually-hidden">Поиск гостиницы в седоне</legend>
+      <fieldset>
+        <label for="arrival-date">Дата заезда:
+          <input id="arrival-date" name="arrival-date" type="date">
+        </label>
+        <label for="departure-date">Дата выезда:
+          <input id="departure-date" name="departure-date" type="date">
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="adults">Взрослые:
+          <input id="adults" name="adults"  type="number" min="1" placeholder="2">
+        </label>
+        <label for="kids">Дети:
+          <input id="kids" name="kids"  type="number" min="0" placeholder="0">
+        </label>
+      </fieldset>
+      <button type="submit">Найти</button>
+    </form>
+
   </section>
 </body>
 
