@@ -27,16 +27,62 @@
     <h1  class="visually-hidden">Поиск жилья в Седоне</h1>
     <section class="section-filter">
       <h2  class="visually-hidden">Фильтр по типу жилья</h2>
-      <form action="#">
+      <form action="#" method="get">
+        <legend class="visually-hidden">Форма подбора гостиницы в Седоне</legend>
         <fieldset>
-
+          <legend>Инфраструктура:</legend>
+          <p>
+            <label for="pool">
+              <input type="checkbox" id="pool" name="pool" checked>
+              Бассейн
+            </label>
+          </p>
+          <p>
+            <label for="pool">
+              <input type="checkbox" id="parking" name="parking">
+              Парковка
+            </label>
+          </p>
+          <p>
+            <label for="wifi">
+              <input type="checkbox" id="wifi" name="wifi">
+              Wi-Fi
+            </label>
+          </p>
         </fieldset>
         <fieldset>
-
+          <legend>Тип жилья:</legend>
+          <p>
+            <label for="hotel">
+              <input type="checkbox" id="hotel" name="hotel" checked>
+              Гостиница
+            </label>
+          </p>
+          <p>
+            <label for="motel">
+              <input type="checkbox" id="motel" name="motel" checked>
+              Мотель
+            </label>
+          </p>
+          <p>
+            <label for="apartment">
+              <input type="checkbox" id="apartment" name="apartment" checked>
+              Апартаменты
+            </label>
+          </p>
         </fieldset>
         <fieldset>
-
+          <legend>Стоимость в сутки (Р):</legend>
+          <p>
+            <label class="visually-hidden" for="lower-price">Нижняя цена</label>
+            <input type="number" id="lower-price" name="lower-price" min="0" placeholder="">
+         </p>
+            <p>
+              <label class="visually-hidden" for="top-price">Верхняя цена</label>
+              <input type="number" id="top-price" name="top-price" min="0" placeholder="">
+            </p>
         </fieldset>
+
         <button type="submit">Показать</button>
       </form>
     </section>
