@@ -99,20 +99,28 @@
     <form action="#" method="get">
       <legend class="visually-hidden">Поиск гостиницы в седоне</legend>
       <fieldset>
-        <label for="arrival-date">Дата заезда:
-          <input id="arrival-date" name="arrival-date" type="date">
-        </label>
-        <label for="departure-date">Дата выезда:
-          <input id="departure-date" name="departure-date" type="date">
-        </label>
+        <p>
+          <label for="arrival-date">Дата заезда:
+            <input id="arrival-date" name="arrival-date" type="date">
+          </label>
+        </p>
+        <p>
+          <label for="departure-date">Дата выезда:
+            <input id="departure-date" name="departure-date" type="date">
+          </label>
+        </p>
       </fieldset>
       <fieldset>
-        <label for="adults">Взрослые:
-          <input id="adults" name="adults"  type="number" min="1" placeholder="2">
-        </label>
-        <label for="kids">Дети:
-          <input id="kids" name="kids"  type="number" min="0" placeholder="0">
-        </label>
+        <p>
+          <label for="adults">Взрослые:
+            <input id="adults" name="adults"  type="number" min="1" placeholder="2">
+          </label>
+        </p>
+        <p>
+          <label for="kids">Дети:
+            <input id="kids" name="kids"  type="number" min="0" placeholder="0">
+          </label>
+        </p>
       </fieldset>
       <button type="submit">Найти</button>
     </form>
