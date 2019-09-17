@@ -99,29 +99,32 @@
     <form action="#" method="get">
       <fieldset>
         <legend class="visually-hidden">Выберете даты пребывания</legend>
-        <p>
-          <label for="arrival-date">Дата заезда:
-            <input id="arrival-date" name="arrival-date" type="date">
-          </label>
-        </p>
-        <p>
-          <label for="departure-date">Дата выезда:
-            <input id="departure-date" name="departure-date" type="date">
-          </label>
-        </p>
+        <ul>
+          <li>
+            <label for="arrival-date">Дата заезда:</label>
+            <input id="arrival-date" name="arrival-date" type="text">
+            <!-- <input id="arrival-date" name="arrival-date" type="date"> -->
+          </li>
+          <li>
+            <label for="departure-date">Дата выезда:</label>
+            <input id="departure-date" name="departure-date" type="text">
+            <!-- <input id="departure-date" name="departure-date" type="date"> -->
+          </li>
+        </ul>
       </fieldset>
+
       <fieldset>
         <legend class="visually-hidden">Состав группы</legend>
-        <p>
-          <label for="adults">Взрослые:
+        <ul>
+          <li>
+            <label for="adults">Взрослые:</label>
             <input id="adults" name="adults"  type="number" min="1" placeholder="2">
-          </label>
-        </p>
-        <p>
-          <label for="kids">Дети:
+          </li>
+          <li>
+            <label for="kids">Дети:</label>
             <input id="kids" name="kids"  type="number" min="0" placeholder="0">
-          </label>
-        </p>
+          </li>
+        </ul>
       </fieldset>
       <button type="submit">Найти</button>
     </form>

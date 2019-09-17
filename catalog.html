@@ -30,56 +30,58 @@
       <form action="#" method="get">
         <fieldset>
           <legend>Инфраструктура:</legend>
-          <p>
-            <label for="pool">
+          <ul>
+            <li>
               <input type="checkbox" id="pool" name="pool" checked>
-              Бассейн
-            </label>
-          </p>
-          <p>
-            <label for="parking">
+              <label for="pool">Бассейн</label>
+            </li>
+            <li>
               <input type="checkbox" id="parking" name="parking">
-              Парковка
-            </label>
-          </p>
-          <p>
-            <label for="wifi">
+              <label for="parking">Парковка</label>
+            </li>
+            <li>
               <input type="checkbox" id="wifi" name="wifi">
-              Wi-Fi
-            </label>
-          </p>
+              <label for="wifi">Wi-Fi</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset>
           <legend>Тип жилья:</legend>
-          <p>
-            <label for="hotel">
+          <ul>
+            <li>
+              <label for="hotel">
               <input type="checkbox" id="hotel" name="hotel" checked>
               Гостиница
             </label>
-          </p>
-          <p>
-            <label for="motel">
+            </li>
+            <li>
+              <label for="motel">
               <input type="checkbox" id="motel" name="motel" checked>
               Мотель
             </label>
-          </p>
-          <p>
-            <label for="apartment">
+            </li>
+            <li>
+              <label for="apartment">
               <input type="checkbox" id="apartment" name="apartment" checked>
               Апартаменты
             </label>
-          </p>
+            </li>
+          </ul>
         </fieldset>
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
-          <p>
-            <label class="visually-hidden" for="lower-price">Нижняя цена</label>
-            <input type="number" id="lower-price" name="lower-price" min="0" placeholder="">
-         </p>
-            <p>
+          <!-- Ввод диапазона значений -->
+          <!-- <input type="range" name="points" min="0" max="10" step="1" > -->
+          <ul>
+            <li>
+              <label class="visually-hidden" for="lower-price">Нижняя цена</label>
+              <input type="number" id="lower-price" name="lower-price" min="0" placeholder="">
+            </li>
+            <li>
               <label class="visually-hidden" for="top-price">Верхняя цена</label>
               <input type="number" id="top-price" name="top-price" min="0" placeholder="">
-            </p>
+            </li>
+          </ul>
         </fieldset>
 
         <button type="submit">Показать</button>
