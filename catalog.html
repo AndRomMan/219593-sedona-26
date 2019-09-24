@@ -15,15 +15,12 @@
             <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип">
           </a>
       <ul class="site-navigation">
-        <li class="navigation__item--left"><a href="#">Информация</a></li>
-        <li class="navigation__item--left"><a href="#">Фото и видео</a></li>
-        <li class="navigation__item--right"><a href="#">Карта штата</a></li>
-        <li class="navigation__item--right navigation-current"><a href="catalog.html">Гостиницы</a></li>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li class="navigation-current"><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
-    <!-- <div class="main-header-banner">
-      <img src="img/intro-welcome.svg" alt="Welcome to the gorgeous SEDONA" width="459" height="353">
-        </div> -->
   </header>
 
   <main class="container">
@@ -93,38 +90,27 @@
     <section class="section-sort">
       <h2 class="visually-hidden">Результат поиска жилья в Седоне</h2>
       <div class="sorting-block">
-        <p>Найдено:<span class="hotel-amount">3</span></p>
-        <form class="hotel-sorting-form" action="#" method="get">
-          <legend>Сортировка:</legend>
-          <fieldset class="sorting-set">
-            <ul>
-              <li>
-                <label for="price-sorting">По цене</label>
-                <input type="radio" id="price-sorting" value="price-sorting" name="sorting" checked>
-              </li>
-              <li>
-                <label for="type-sorting">По типу</label>
-                <input type="radio" id="type-sorting" value="type-sorting" name="sorting">
-              </li>
-              <li>
-                <label for="rating-sorting">По рейтингу</label>
-                <input type="radio" id="rating-sorting" value="rating-sorting" name="sorting">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="sorting-type">
-            <ul>
-              <li>
-                <label class="visually-hidden" for="price-sorting">По возрастанию</label>
-                <input type="radio" id="ascending" value="ascending" name="sort-direction" checked>
-              </li>
-              <li>
-                <label class="visually-hidden" for="type-sorting">По убыванию</label>
-                <input type="radio" id="descending" value="descending" name="sort-direction">
-              </li>
-            </ul>
-          </fieldset>
-        </form>
+        <p class="sorting-block__title">Найдено:<span class="hotel-amount">3</span></p>
+        <p class="sorting-block__subtitle">Сортировка:</p>
+        <ul>
+          <li>
+            <a href="#">По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По рейтингу</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a  href="#" class="visually-hidden">По возрастанию</a>
+          </li>
+          <li>
+            <a  href="#" class="visually-hidden">По убыванию</a>
+          </li>
+        </ul>
       </div>
 
       <ul class="sort-list">
