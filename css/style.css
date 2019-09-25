@@ -170,7 +170,7 @@ a {
   color: #766357;
 }
 
-.main-header-banner {
+.main-header__banner {
   background: #81b3d2;
   background-image: url("../img/sedona-banner_bg.jpg");
   background-position: center top;
@@ -291,13 +291,15 @@ a {
 }
 
 .attraction__title {
-  font-size: 21;
   font-weight: 700;
+  font-size: 21px;
+
   color: #000000;
 }
 
 .attraction__description {
   font-size: 14px;
+  /* font-size: 21px; */
   font-weight: 400;
   color: #333333;
 }
@@ -325,6 +327,10 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  /* temp  */
+  width: 100%;
+  height: 10vh;
 }
 
 .main-footer {
@@ -517,7 +523,7 @@ a {
   outline: 2px solid #e5e5e5;
 }
 
-.shelter-description {}
+/* .shelter-description {} */
 
 .shelter-description__title {
   font-size: 21px;
@@ -633,7 +639,7 @@ a {
   width: 25%;
 }
 
-.main-header-banner {
+.main-header__banner {
   display: flex;
   justify-content: center;
   align-items: center;
