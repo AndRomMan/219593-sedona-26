@@ -24,7 +24,7 @@
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-.-visually-hidden {
+.visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -39,7 +39,6 @@
 
 html {
   box-sizing: border-box;
-  background: #f2f2f2;
 }
 
 *,
@@ -58,7 +57,7 @@ body {
   color: #000000;
   text-transform: uppercase;
 
-  background: #ffffff;
+  background: #f2f2f2;
 }
 
 img {
@@ -139,6 +138,9 @@ a {
 }
 
 .site-navigation {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -171,75 +173,151 @@ a {
 .main-header-banner {
   background: #81b3d2;
   background-image: url("../img/sedona-banner_bg.jpg");
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.advantages {
+/* .main-header {
+  background: #81b3d2;
+  background-image: url("../img/sedona-banner_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.advantages-intro {
   line-height: 26px;
   text-align: center;
 }
 
-.advantages__slogan {
+.advantages-intro__slogan {
   font-size: 21px;
   font-weight: 700;
 }
 
-.advantages__consideration {
+.advantages-intro__consideration {
   font-size: 14px;
   font-weight: 400;
   color: #333333;
 }
 
-.advantages ul {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+.advantages-wrap {
+  color: #ffffff;
+  /* temp */
+  background-color: #81b3d2;
 }
 
 .advantages__item {
-  background-color: #eeeeee;
+  text-align: center;
+  line-height: 21px;
+  background-color: transparent;
 }
 
 .advantages__item--back {
   background-color: #81b3d2;
 }
 
-.advantages__item p {
+.advantages__title {
+  font-size: 21px;
+  /* line-height: 21px; */
+  font-weight: 700;
+  color: inherit;
+}
+
+.advantages__description,
+.advantages__num {
   font-size: 14px;
+  /* line-height: 21px; */
+  font-weight: 400;
+  color: inherit;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  background-color: #eeeeee;
+}
+
+/* .advantages-list li {
+  background-color: #eeeeee;
+} */
+
+.attraction-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  background-color: #ffffff;
+}
+
+/* .attraction-list li {
+  background-color: #ffffff;
+} */
+
+.advantages-list .advantages__num,
+.advantages-list .advantages__description {
+  color: #333333;
+}
+
+.attraction__item {
   line-height: 21px;
+  text-align: center;
+}
+
+.attraction__icon {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  /* background-color: #5496bd; */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.attraction__icon--back1 {
+  background-image: url("../img/icon-1.svg");
+}
+
+.attraction__icon--back2 {
+  background-image: url("../img/icon-2.svg");
+}
+
+.attraction__icon--back3 {
+  background-image: url("../img/icon-3.svg");
+}
+
+.attraction__title {
+  font-size: 21;
+  font-weight: 700;
+  color: #000000;
+}
+
+.attraction__description {
+  font-size: 14px;
   font-weight: 400;
   color: #333333;
 }
 
-.advantages__item span {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 700;
-}
-
-.advantages__item--back p,
-.advantages__item--back span {
-  color: #ffffff;
-}
-
-.attraction-list li {
+.hotel-searching {
+  text-align: center;
   background-color: #ffffff;
 }
 
-.hotel-searching p:nth-of-type(1) {
+.hotel-searching__title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
 }
 
-.hotel-searching p:nth-of-type(2) {
+.hotel-searching__description {
   font-size: 14px;
-  color: #333333;
   line-height: 24px;
   font-weight: 400;
+  color: #333333;
 }
 
 .map {
@@ -254,14 +332,14 @@ a {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.main-footer ul {
+.social {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.main-footer a {
+.main-footer__link {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -269,39 +347,51 @@ a {
   color: #000000;
 }
 
-.main-footer a:hover,
-.main-footer a:focus {
+.main-footer__link:hover,
+.main-footer__link:focus {
   text-decoration: underline;
 }
 
-.main-footer a:visited {
+.main-footer__link:visited {
   text-decoration: none;
 }
 
-.social-button {
-  /* color: #000000; */
+.social__button:hover,
+.social__button:focus {
+  text-decoration: underline;
 }
 
-.footer-copyright {
+.social__button:visited {
+  text-decoration: none;
+}
+
+.social__button {
+  color: #000000;
+}
+
+.main-footer__copyright {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  /* vertical-align: middle; */
 }
 
-.footer-copyright img {
+.main-footer__copyright img {
   vertical-align: middle;
 }
+
 
 .search-form {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+
+  background-color: #ffffff;
 }
 
-.search-form ul {
+.search-form__list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -365,6 +455,9 @@ a {
   border: none;
 }
 
+.sorting-block__head {
+  /* color: #000000; */
+}
 
 .sorting-block__title {
   /* Text: Найдено: 3 */
@@ -382,14 +475,14 @@ a {
   /* color: #000000; */
 }
 
-.sorting-block ul {
+.sorting-block__list {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.sorting-block a {
+.sorting-block__item {
   /* Text: По цене По типу По рейтингу */
   font-size: 12px;
   line-height: 18px;
@@ -398,86 +491,153 @@ a {
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-block a:hover {
+.sorting-block__item:hover {
   /* Text: По цене По типу По рейтингу */
   /* text-decoration: underline; */
   border-bottom: 1px dotted #81b3d2;
   color: #81b3d2;
 }
 
-.sorting-block a:active {
+.sorting-block__item:active {
   /* Text: По цене По типу По рейтингу */
   /* text-decoration: underline; */
   border-bottom: none;
   color: #000000;
 }
 
-.sort-list-item {
-  /* border: 1px solid #e5e5e5; */
-  outline: 2px solid #e5e5e5;
-}
-
-.sort-list {
+.result-list {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.title {
+.result-list__item {
+  /* border: 1px solid #e5e5e5; */
+  outline: 2px solid #e5e5e5;
+}
+
+.shelter-description {}
+
+.shelter-description__title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.type-and-price span,
-.action-button a {
+.shelter-description__type,
+.shelter-description__price {
   font-size: 14px;
   line-height: 21px;
-}
-
-.type-and-price span {
-  color: #333333;
   font-weight: 400;
+  color: #333333;
 }
 
-.action-button a {
-  color: #ffffff;
+
+.action-button__details,
+.action-button__book {
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 700;
+
+  color: #ffffff;
 }
 
-.button-details {
+.action-button__details {
   background-color: #81b3d2;
 }
 
-.button-details:hover,
-.button-details:focus {
-  background-color: #669ec0;
-  cursor: pointer;
+.action-button__book {
+  background-color: #766357;
 }
 
-.button-details:active {
+.action-button__details:hover,
+.action-button__details:focus {
+  background-color: #669ec0;
+}
+
+
+.action-button__details:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-book {
-  background-color: #766357;
-}
-
-.button-book:hover,
-.button-book:focus {
+.action-button__book:hover,
+.action-button__book:focus {
   background-color: #604e43;
-  cursor: pointer;
 }
 
-.button-book:active {
+.action-button__book:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.action-button .stars-and-rating span {
-  width: 18px;
-  height: 18px;
+.shelter-rating__stars {
+  /* width: 18px;
+  height: 18px; */
   color: #81b3d2;
+}
+
+.shelter-rating__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+/* flex box grid */
+/* SEDONA layout width  — 1200px */
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+
+  background-color: #ffffff;
+  box-shadow: 0 0 10px #b3b1b1;
+}
+
+/* .main-header {
+  display: flex;
+  flex-direction: column;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-navigation {
+  /* display: flex; */
+  position: relative;
+}
+
+.main-header-logo {
+  position: absolute;
+  text-align: center;
+  /* margin: 0 auto; */
+  left: 0;
+  right: 0;
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.site-navigation li {
+  width: 25%;
+}
+
+.main-header-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 1200px;
+  height: 510px;
 }
