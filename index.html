@@ -26,7 +26,7 @@
       </nav>
 
       <div class="main-header__banner">
-        <img src="img/intro-welcome.svg" alt="Welcome to the gorgeous SEDONA" width="459" height="353">
+        <img class="main-header__img" src="img/intro-welcome.svg" alt="Welcome to the gorgeous SEDONA" width="459" height="353">
     </div>
 
     </header>
@@ -35,31 +35,33 @@
       <h1 class="visually-hidden">Сервис организации путешествия в Седону</h1>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
+
         <div class="advantages-intro">
           <p class="advantages-intro__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="advantages-intro__consideration">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
-        <div class="advantages-wrap">
-          <div class="advantages__item">
-            <h3 class="advantages__title">Настоящий городок</h3>
+
+        <div class="advantages__item">
+          <div class="advantages__item-description">
+            <h3 class="advantages__title">Настоящий<br>городок</h3>
             <span class="advantages__num">— №1 —</span>
-            <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="advantages__description">Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
           </div>
           <img src="img/advantage-1.jpg" alt="Фото показывающее реальную городка" width="800" height="256">
         </div>
-          <ul class="attraction-list">
+          <ul class="attraction__list">
             <li>
               <div class="attraction__item">
                 <span class="attraction__icon attraction__icon--back1"></span>
                 <p class="attraction__title">Жильё</p>
-                <p class="attraction__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="attraction__description">Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
               </div>
             </li>
             <li>
               <div class="attraction__item">
                 <span class="attraction__icon attraction__icon--back2"></span>
                 <p class="attraction__title">Еда</p>
-                <p class="attraction__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="attraction__description">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
               </div>
             </li>
             <li>
@@ -70,48 +72,84 @@
               </div>
             </li>
           </ul>
-          <div class="advantages-wrap">
-            <div class="advantages__item">
-              <h3 class="advantages__title">Там есть Мост дьявола</h3>
-              <span>— №2 —</span>
-              <p class="advantages__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            </div>
+          <div class="advantages__item">
             <img src="img/advantage-2.jpg" alt="Фото моста над каньоном" width="800" height="256">
-        </div>
-            <ul class="advantages-list">
-              <li>
-                <div class="advantages__item">
-                  <h3 class="advantages__title">Небольшая площадь</h3>
-                  <span class="advantages__num">— №3 —</span>
-                  <p class="advantages__description">Все достопримечательности находятся очень близко</p>
-                </div>
-              </li>
-              <li>
-                <div class="advantages__item">
-                  <h3 class="advantages__title">Красивая дорога</h3>
-                  <span class="advantages__num">— №4 —</span>
-                  <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                </div>
-              </li>
-              <li>
-                <div class="advantages__item">
-                  <h3 class="advantages__title">Мало туристов</h3>
-                  <span class="advantages__num">— №5 —</span>
-                  <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
-                </div>
-              </li>
-            </ul>
+            <div class="advantages__item-description">
+              <h3 class="advantages__title">Там есть<br>мост дьявола</h3>
+              <span class="advantages__num">— №2 —</span>
+              <p class="advantages__description">Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+            </div>
+          </div>
+          <ul class="advantages__list">
+            <li>
+              <div class="advantages__item-description">
+                <h3 class="advantages__title">Небольшая<br>площадь</h3>
+                <span class="advantages__num">— №3 —</span>
+                <p class="advantages__description">Все достопримечательности<br>находятся очень близко</p>
+              </div>
+            </li>
+            <li>
+              <div class="advantages__item-description">
+                <h3 class="advantages__title">Красивая<br>дорога</h3>
+                <span class="advantages__num">— №4 —</span>
+                <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+              </div>
+            </li>
+            <li>
+              <div class="advantages__item-description">
+                <h3 class="advantages__title">Мало<br>туристов</h3>
+                <span class="advantages__num">— №5 —</span>
+                <p class="advantages__description">Большинство едет в гранд каньон<br>и толпится там</p>
+              </div>
+            </li>
+          </ul>
       </section>
 
       <section class="hotel-searching">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="hotel-searching__title">Заинтересовались?</p>
-        <p class="hotel-searching__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне
+        <p class="hotel-searching__description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Cедоне
         </p>
-        <button class="button button-open-form" type="button">Поиск гостиницы в седоне</button>
+          <button class="button button-open-form" type="button">Поиск гостиницы в седоне</button>
       </section>
 
       <section class="map">
+        <div class="modal modal-searching">
+          <h4 class="visually-hidden">Форма поиска гостиницы</h4>
+          <form class="search-form" action="#" method="get">
+            <fieldset>
+              <legend class="visually-hidden">Выберете даты пребывания</legend>
+              <ul class="search-form__list">
+                <li>
+                  <label for="arrival-date">Дата заезда:</label>
+                  <input id="arrival-date" name="arrival-date" type="text">
+                      </li>
+                <li>
+                  <label for="departure-date">Дата выезда:</label>
+                  <input id="departure-date" name="departure-date" type="text">
+                      </li>
+              </ul>
+            </fieldset>
+
+            <fieldset>
+              <legend class="visually-hidden">Состав группы</legend>
+              <ul class="search-form__list">
+                <li>
+                  <label for="adults">Взрослые:</label>
+                  <input id="adults" name="adults"  type="number" min="1" placeholder="2">
+                      </li>
+                <li>
+                  <label for="kids">Дети:</label>
+                  <input id="kids" name="kids"  type="number" min="0" placeholder="0">
+                      </li>
+              </ul>
+            </fieldset>
+
+            <button class="button button-search-form" type="submit">Найти</button>
+          </form>
+
+        </div>
+
         <h2  class="visually-hidden">Как до нас добраться - карта</h2>
         <!-- Карта -->
       </section>
@@ -119,11 +157,27 @@
 
     <footer class="main-footer container">
       <a class="main-footer__link" href="#">#VISITSEDONA</a>
+
       <ul class="main-footer__social social">
-        <li><a class="social__button" href="#">Вконтакте</a></li>
-        <li><a class="social__button" href="#">Facebook</a></li>
-        <li><a class="social__button" href="#">YouTube</a></li>
+        <li class="social__item">
+          <a class="social__button" href="#" target="_blank">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__button" href="#" target="_blank">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__button" href="#" target="_blank">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
       </ul>
+
       <p class="main-footer__copyright">Website by
         <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
@@ -132,7 +186,7 @@
     </footer>
   </div>
 
-  <section class="modal">
+  <!-- <section class="modal modal-searching">
     <h4 class="visually-hidden">Форма поиска гостиницы</h4>
     <form class="search-form" action="#" method="get">
       <fieldset>
@@ -141,12 +195,10 @@
           <li>
             <label for="arrival-date">Дата заезда:</label>
             <input id="arrival-date" name="arrival-date" type="text">
-            <!-- <input id="arrival-date" name="arrival-date" type="date"> -->
           </li>
           <li>
             <label for="departure-date">Дата выезда:</label>
             <input id="departure-date" name="departure-date" type="text">
-            <!-- <input id="departure-date" name="departure-date" type="date"> -->
           </li>
         </ul>
       </fieldset>
@@ -167,7 +219,7 @@
       <button class="button button-search-form" type="submit">Найти</button>
     </form>
 
-  </section>
+  </section> -->
 
 </body>
 
