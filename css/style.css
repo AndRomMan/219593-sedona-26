@@ -573,8 +573,9 @@ a {
 .date-set__input,
 .age-set__input {
   background-color: #f2f2f2;
-  border: none;
   padding: 0;
+
+  border: 2px solid #f2f2f2;
 }
 
 .age-set__label {
@@ -586,7 +587,7 @@ a {
   width: 308px;
   height: 38px;
 
-  padding-left: 13px;
+  padding-left: 11px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -611,12 +612,14 @@ a {
 .date-set__input:hover,
 .age-set__input:hover {
   background-color: #ebebeb;
+  border: 2px solid #ebebeb;
 }
 
 .date-set__input:focus,
 .age-set__input:focus {
   background-color: #ffffff;
-  outline-color: #e5e5e5;
+  outline: none;
+  border: 2px solid #e5e5e5;
 }
 
 .date-set__button,
@@ -627,15 +630,24 @@ a {
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
+
+  border: 2px solid #f2f2f2;
 }
 
 .date-set__button {
   padding-top: 5px;
 }
 
+.date-set__button:hover,
+.age-set__button:hover {
+  background-color: #ebebeb;
+  border: 2px solid #ebebeb;
+}
+
 .date-set__button:focus,
 .age-set__button:focus {
-  outline-color: #e5e5e5;
+  outline: none;
+  border: 2px solid #e5e5e5;
 }
 
 .date-set__button path {
@@ -921,7 +933,7 @@ a {
 }
 
 .selection-form__title {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   font-size: 16px;
   line-height: 21px;
@@ -982,7 +994,7 @@ a {
 }
 
 .range-set__title {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .price-controls {
@@ -1048,7 +1060,7 @@ a {
 
 .range-controls {
   position: relative;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
 }
 
 .scale {
