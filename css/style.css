@@ -179,13 +179,13 @@ a {
 
   display: flex;
   justify-content: center;
-  padding-top: 75px;
+  padding-top: 76px;
   padding-bottom: 80px;
   width: 1200px;
 
   background: #81b3d2;
   background-image: url("../img/sedona-banner_bg.jpg");
-  background-position: center -85px;
+  background-position: center -83px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -300,10 +300,7 @@ a {
 .advantages__item-description {
   align-self: stretch;
   margin: 0;
-  padding: 0;
-  padding-top: 48px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding: 47px 0 0 0;
   flex-grow: 1;
 
   text-align: center;
@@ -314,8 +311,8 @@ a {
 .advantages__title {
   margin: 0;
   margin-bottom: 24px;
-  padding: 0;
-
+  /* padding: 0; */
+  padding: 0 120px 0 120px;
   font-size: 21px;
   font-weight: 700;
   color: inherit;
@@ -330,8 +327,20 @@ a {
 
 .advantages__text {
   margin: 0;
-  margin-bottom: 57px;
-  padding: 0;
+  margin-bottom: 59px;
+  padding: 0 55px 0 55px;
+}
+
+.advantages__text--padding-40px {
+  padding: 0 40px 0 40px;
+}
+
+.advantages__text--padding-75px {
+  padding: 0 75px 0 75px;
+}
+
+.advantages__text--padding-65px {
+  padding: 0 65px 0 65px;
 }
 
 .advantages__text,
@@ -376,8 +385,8 @@ a {
   margin: 0;
   padding: 0;
   padding-top: 59px;
-  padding-left: 45px;
-  padding-right: 45px;
+  /* padding-left: 45px; */
+  /* padding-right: 45px; */
   width: 400px;
 
   line-height: 21px;
@@ -410,7 +419,7 @@ a {
 
 .attraction__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   padding: 0;
 
   font-weight: 700;
@@ -420,17 +429,21 @@ a {
 
 .attraction__description {
   margin: 0;
-  margin-bottom: 80px;
-  padding: 0;
+  margin-bottom: 82px;
+  padding: 0 60px 0 60px;
 
   font-size: 14px;
   font-weight: 400;
   color: #333333;
 }
 
+.attraction__description--padding-50px {
+  padding: 0 50px 0 50px;
+}
+
 /* ========== hotel-searching ========== */
 .hotel-searching {
-  padding-top: 51px;
+  padding-top: 49px;
   padding-right: 316px;
   padding-left: 316px;
 
@@ -967,6 +980,7 @@ a {
 .selection-form__item input:checked:disabled + .check__box {
   background-image: url("../img/checkbox-disabled-on.svg");
 }
+
 
 .selection-form__item {
   height: 30px;
