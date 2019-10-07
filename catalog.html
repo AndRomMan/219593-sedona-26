@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
   <title>Седона - каталог</title>
   <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 
 <body class="inner-page">
@@ -46,10 +47,10 @@
             <legend class="selection-form__title">Инфраструктура:</legend>
             <ul class="selection-form__list">
               <li class="selection-form__item">
-                <label for="pool">
-                  <input  class="visually-hidden" type="checkbox" id="pool" name="pool" checked>
+                <label  class="check__label" for="pool">
+                  <input class="visually-hidden " type="checkbox" id="pool" name="pool" checked>
                   <span class="check__box"></span>
-                  Бассейн
+                  <span>Бассейн</span>
                 </label>
               </li>
               <li class="selection-form__item">
@@ -160,11 +161,11 @@
           <li class="result-list__item">
             <img src="img/hotel-1.jpg" alt="Фото гостиницы Amara Resort & Spa" width="135" height="95" >
             <div class="shelter-description">
-              <h3 class="shelter-description__title">
-                <a href="">
-                  Amara&nbsp;Resort&nbsp;&nbsp;&&nbsp;Spa
-                </a>
-              </h3>
+              <a class="shelter-description__link" href="">
+                <h3 class="shelter-description__title">
+                  Amara&nbsp;Resort&nbsp;&&nbsp;Spa
+                </h3>
+              </a>
               <p class="shelter-description__info shelter-info">
                 <span class="shelter-info__type">Гостиница</span>
                 <span class="shelter-info__price">От 4000 Р.</span>
@@ -190,11 +191,11 @@
           <li class="result-list__item">
             <img src="img/hotel-2.jpg" alt="Фото мотеля Desert Quail Inn" width="135" height="95" >
             <div class="shelter-description">
-              <h3 class="shelter-description__title">
-                    <a href="">
-                        Desert&nbsp;Quail&nbsp;Inn
-                    </a>
-                  </h3>
+              <a class="shelter-description__link" href="">
+                <h3 class="shelter-description__title">
+                  Desert&nbsp;Quail&nbsp;Inn
+                </h3>
+              </a>
               <p class="shelter-description__info shelter-info">
                 <span class="shelter-info__type">Мотель</span>
                 <span class="shelter-info__price">От 3000 Р.</span>
@@ -220,11 +221,11 @@
           <li class="result-list__item">
             <img src="img/hotel-3.jpg" alt="Фото мотеля Desert Quail Inn" width="135" height="95" >
             <div class="shelter-description">
-              <h3 class="shelter-description__title">
-                    <a href="">
-                        Villas&nbsp;at&nbsp;Poco&nbsp;Diablo
-                    </a>
-                  </h3>
+              <a class="shelter-description__link" href="">
+                <h3 class="shelter-description__title">
+                  Villas&nbsp;at&nbsp;Poco&nbsp;Diablo
+                </h3>
+              </a>
               <p class="shelter-description__info shelter-info">
                 <span class="shelter-info__type">Апартаменты</span>
                 <span class="shelter-info__price">От 2000 Р.</span>
