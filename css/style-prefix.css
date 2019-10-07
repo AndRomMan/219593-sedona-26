@@ -723,7 +723,6 @@ a {
   background-color: #f2f2f2;
 
   border: 2px solid #f2f2f2;
-  outline: none;
 }
 
 .date-set__button {
@@ -734,14 +733,12 @@ a {
 .age-set__button:hover {
   background-color: #ebebeb;
   border: 2px solid #ebebeb;
-  outline: none;
 }
 
 .date-set__button:focus,
 .age-set__button:focus {
   /* outline: none; */
   border: 2px solid #e5e5e5;
-  outline: none;
 }
 
 .date-set__button path {
