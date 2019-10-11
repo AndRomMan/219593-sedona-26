@@ -97,8 +97,9 @@ a {
   width: 1200px;
 
   background-color: #ffffff;
-  /* box-shadow: 0 0 10px #b3b1b1; */
+
   -webkit-box-shadow: 0 7px 15px #b3b1b1;
+  /* box-shadow: 0 7px 15px #b3b1b1; */
   box-shadow: 0 7px 15px #b3b1b1;
 }
 
@@ -479,8 +480,8 @@ a {
 /* ========== hotel-searching ========== */
 .hotel-searching {
   padding-top: 50px;
-  padding-right: 316px;
-  padding-left: 316px;
+  padding-right: 315px;
+  padding-left: 315px;
 
   text-align: center;
   background-color: #ffffff;
@@ -508,6 +509,9 @@ a {
 }
 
 .hotel-searching__button {
+  position: relative;
+  z-index: 2;
+
   width: 100%;
   margin: 0;
   padding: 0;
@@ -544,17 +548,24 @@ a {
   height: 594px;
 }
 
+.button-wrapper {
+  position: relative;
+  background-color: #663d15;
+}
+
 /*========== modal in map ==========*/
 .modal-searching {
   display: none;
-  /* display: block; */
-
+  -webkit-transform: scale(1, 0.2);
+  -ms-transform: scale(1, 0.2);
+  transform: scale(1, 0.2);
   position: absolute;
-  top: 0;
+  z-index: 1;
+  top: -155px;
   left: 0;
   right: 0;
   margin: auto;
-  /* transform: translateX(-2000px); */
+
 
   padding-top: 55px;
   padding-bottom: 55px;
@@ -564,66 +575,139 @@ a {
   width: 570px;
 
   background-color: #ffffff;
-  -webkit-box-shadow: 0 7px 15px #b3b1b1;
-  box-shadow: 0 7px 15px #b3b1b1;
+
+  -webkit-box-shadow: 0 7px 15px #8a8989;
+  box-shadow: 0 7px 15px #8a8989;
 }
 
-@keyframes roll-in {
+@-webkit-keyframes unfolding {
   0% {
-    left: -3000px;
+    top: -155px;
+    -webkit-transform: scale(1, 0.2);
+    transform: scale(1, 0.2);
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 
-  60% {
-    left: 30px;
-  }
-
-  65% {
-    left: -20px;
-  }
-
-  70% {
-    left: 20px;
-  }
-
-  75% {
-    left: -10px;
-  }
-
-  80% {
-    left: 10px;
-  }
-
-  85% {
-    left: -5px;
-  }
-
-  90% {
-    left: 5px;
-  }
-
-  95% {
-    left: -2px;
+  50% {
+    top: 35px;
+    -webkit-transform: scale(1, 0.2);
+    transform: scale(1, 0.2);
   }
 
   100% {
-    left: 0;
+    top: 86px;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-box-shadow: 0 7px 15px #8a8989;
+    box-shadow: 0 10px 15px #c0bbbb;
+  }
+}
+
+@keyframes unfolding {
+  0% {
+    top: -155px;
+    -webkit-transform: scale(1, 0.2);
+    transform: scale(1, 0.2);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  50% {
+    top: 35px;
+    -webkit-transform: scale(1, 0.2);
+    transform: scale(1, 0.2);
+  }
+
+  100% {
+    top: 86px;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-box-shadow: 0 7px 15px #8a8989;
+    box-shadow: 0 7px 15px #8a8989;
   }
 }
 
 .modal-show {
   display: block;
-  animation: roll-in 0.8s;
-  left: 0;
+  -webkit-animation: unfolding 0.6s;
+  animation: unfolding 0.6s;
+  top: 86px;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+
+  -webkit-box-shadow: 0 7px 15px #8a8989;
+  box-shadow: 0 7px 15px #8a8989;
+}
+
+
+@-webkit-keyframes folding {
+  0% {
+    top: 86px;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+
+    -webkit-box-shadow: 0 7px 15px #8a8989;
+    box-shadow: 0 7px 15px #8a8989;
+  }
+
+  50% {
+    top: 35px;
+    -webkit-transform: scale(1, 0.2);
+    transform: scale(1, 0.2);
+  }
+
+  100% {
+    top: -155px;
+    -webkit-transform: scale(1, 0.2);
+    transform: scale(1, 0.2);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+
+@keyframes folding {
+  0% {
+    top: 86px;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+
+    -webkit-box-shadow: 0 7px 15px #8a8989;
+    box-shadow: 0 7px 15px #8a8989;
+  }
+
+  50% {
+    top: 35px;
+    -webkit-transform: scale(1, 0.2);
+    transform: scale(1, 0.2);
+  }
+
+  100% {
+    top: -155px;
+    -webkit-transform: scale(1, 0.2);
+    transform: scale(1, 0.2);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 }
 
 .modal-hide {
-  display: block;
-  left: -3000px;
-  transition: 0.8s;
+  -webkit-animation: folding 0.6s;
+  animation: folding 0.6s;
+  top: -155px;
+  -webkit-transform: scale(1, 0.2);
+  -ms-transform: scale(1, 0.2);
+  transform: scale(1, 0.2);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  /* display: none; */
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0% {
+    -webkit-transform: skewX(0);
     transform: skewX(0);
   }
 
@@ -632,6 +716,7 @@ a {
   50%,
   70%,
   90% {
+    -webkit-transform: skewX(2deg);
     transform: skewX(2deg);
   }
 
@@ -639,16 +724,49 @@ a {
   40%,
   60%,
   80% {
+    -webkit-transform: skewX(-2deg);
     transform: skewX(-2deg);
   }
 
   100% {
+    -webkit-transform: skewX(0);
+    transform: skewX(0);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: skewX(0);
+    transform: skewX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: skewX(2deg);
+    transform: skewX(2deg);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: skewX(-2deg);
+    transform: skewX(-2deg);
+  }
+
+  100% {
+    -webkit-transform: skewX(0);
     transform: skewX(0);
   }
 }
 
 .modal-error {
+  -webkit-animation-name: shake;
   animation-name: shake;
+  -webkit-animation-duration: 0.4s;
   animation-duration: 0.4s;
 }
 

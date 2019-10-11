@@ -15,22 +15,24 @@ try {
   isStorageSupport = false;
 }
 
-// popup.classList.remove("modal-hide");
 popup.classList.add("modal-show");
-// arrivalDate.focus();
-
 
 startSearching.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-error");
-
-  if (popup.classList.contains("modal-show")) {
+  if (popup.classList.contains("modal-show") && popup.classList.contains("modal-hide")) {
     popup.classList.remove("modal-show");
-    popup.classList.remove("modal-hide");
-  } else {
     popup.classList.remove("modal-hide");
     popup.classList.add("modal-show");
     arrivalDate.focus();
+
+  } else {
+    if (popup.classList.contains("modal-show")) {
+      popup.classList.add("modal-hide");
+    } else {
+      popup.classList.add("modal-show");
+      arrivalDate.focus();
+    }
   }
 });
 
@@ -48,12 +50,10 @@ form.addEventListener("submit", function (evt) {
       localStorage.setItem("departure date", departureDate.value);
       localStorage.setItem("number of adults", adults.value);
       localStorage.setItem("number of kids", kids.value);
-      popup.classList.add("modal-hide");
       popup.classList.remove("modal-show");
     }
   }
 });
-
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {

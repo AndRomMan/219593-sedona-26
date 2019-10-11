@@ -132,84 +132,83 @@
           <p class="hotel-searching__description">
             Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Cедоне
           </p>
-          <button class="button hotel-searching__button" type="button">Поиск
-            гостиницы в седоне</button>
+          <div class="button-wrapper">
+            <button class="button hotel-searching__button" type="button">Поиск гостиницы в седоне</button>
+            <div class="modal modal-searching">
+              <h4 class="visually-hidden">Форма поиска гостиницы</h4>
+              <form class="search-form" action="#" method="get">
+                <fieldset class="search-form__date date-set">
+                  <legend class="visually-hidden">Выберете даты пребывания</legend>
+                  <ul class="date-set__list">
+                    <li class="date-set__item">
+                      <label class="date-set__label" for="arrival-date">Дата&nbsp;&nbsp;заезда:</label>
+                      <input class="date-set__input" id="arrival-date" name="arrival-date" type="text"
+                             placeholder="24 апреля 2017">
+                      <button class="button date-set__button" type="button" aria-label="Выбрать дату заезда">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewbox="0 0 21 22">
+                          <path
+                                d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                          <path
+                                d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="date-set__item">
+                      <label class="date-set__label" for="departure-date">
+                        Дата&nbsp;&nbsp;выезда:</label>
+                      <input class="date-set__input" id="departure-date" name="departure-date" type="text"
+                             placeholder="4 июля 2017">
+                      <button class="button date-set__button" type="button" aria-label="Выбрать дату выезда">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewbox="0 0 21 22">
+                          <path
+                                d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                          <path
+                                d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </fieldset>
+
+                <fieldset class="search-form__age age-set">
+                  <legend class="visually-hidden">Состав группы</legend>
+                  <ul class="age-set__list">
+                    <li class="age-set__item">
+                      <label class="age-set__label" for="adults">Взрослые:</label>
+                      <button class="button age-set__button" type="button" aria-label="Уменьшить количество взрослых">
+                        &minus;
+                      </button>
+                      <input class="age-set__input" id="adults" name="adults" type="text" placeholder="2">
+                      <button class="button age-set__button" type="button" aria-label="Увеличить количество взрослых">
+                        &plus;
+                      </button>
+                    </li>
+
+                    <li class="age-set__item">
+                      <label class="age-set__label" for="kids">Дети:</label>
+                      <button class="button age-set__button" type="button" aria-label="Уменьшить количество детей">
+                        &minus;
+                      </button>
+                      <input class="age-set__input" id="kids" name="kids" type="text" placeholder="0">
+                      <button class="button age-set__button" type="button" aria-label="Увеличить количество детей">
+                        &plus;
+                      </button>
+                    </li>
+                  </ul>
+                </fieldset>
+                <button class="button search-form__button" type="submit">Найти</button>
+              </form>
+            </div>
+          </div>
         </section>
 
         <section class="map">
-          <div class="modal modal-searching">
-            <h4 class="visually-hidden">Форма поиска гостиницы</h4>
-            <form class="search-form" action="#" method="get">
-              <fieldset class="search-form__date date-set">
-                <legend class="visually-hidden">Выберете даты пребывания</legend>
-                <ul class="date-set__list">
-                  <li class="date-set__item">
-                    <label class="date-set__label" for="arrival-date">Дата&nbsp;&nbsp;заезда:</label>
-                    <input class="date-set__input" id="arrival-date" name="arrival-date" type="text"
-                           placeholder="24 апреля 2017">
-                    <button class="button date-set__button" type="button" aria-label="Выбрать дату заезда">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewbox="0 0 21 22">
-                        <path
-                              d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
-                        <path
-                              d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
-                      </svg>
-                    </button>
-                  </li>
-                  <li class="date-set__item">
-                    <label class="date-set__label" for="departure-date">
-                      Дата&nbsp;&nbsp;выезда:</label>
-                    <input class="date-set__input" id="departure-date" name="departure-date" type="text"
-                           placeholder="4 июля 2017">
-                    <button class="button date-set__button" type="button" aria-label="Выбрать дату выезда">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewbox="0 0 21 22">
-                        <path
-                              d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
-                        <path
-                              d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
-                      </svg>
-                    </button>
-                  </li>
-                </ul>
-              </fieldset>
-
-              <fieldset class="search-form__age age-set">
-                <legend class="visually-hidden">Состав группы</legend>
-                <ul class="age-set__list">
-                  <li class="age-set__item">
-                    <label class="age-set__label" for="adults">Взрослые:</label>
-                    <button class="button age-set__button" type="button" aria-label="Уменьшить количество взрослых">
-                      &minus;
-                    </button>
-                    <input class="age-set__input" id="adults" name="adults" type="text" placeholder="2">
-                    <button class="button age-set__button" type="button" aria-label="Увеличить количество взрослых">
-                      &plus;
-                    </button>
-                  </li>
-
-                  <li class="age-set__item">
-                    <label class="age-set__label" for="kids">Дети:</label>
-                    <button class="button age-set__button" type="button" aria-label="Уменьшить количество детей">
-                      &minus;
-                    </button>
-                    <input class="age-set__input" id="kids" name="kids" type="text" placeholder="0">
-                    <button class="button age-set__button" type="button" aria-label="Увеличить количество детей">
-                      &plus;
-                    </button>
-                  </li>
-                </ul>
-              </fieldset>
-              <button class="button search-form__button" type="submit">Найти</button>
-            </form>
-          </div>
-
           <h2 class="visually-hidden">Как до нас добраться - карта</h2>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52383.88675247714!2d-111.82826976523438!3d34.856405173831185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1570713630066!5m2!1sru!2sru"
                   width="1200" height="594" style="border: 0;" allowfullscreen=""></iframe>
           <!-- frameborder="0" -->
         </section>
       </main>
-
       <div class="footer-wrapper">
         <footer class="main-footer container">
           <div class="main-footer__link link">
@@ -248,7 +247,6 @@
         </footer>
       </div>
     </div>
-
     <!-- <script src="js/modal-searching.js"></script> -->
     <script src="js/modal-searching.min.js"></script>
 
